@@ -36,7 +36,15 @@ function interestCalculator(array) {
     }
     var interest = (data[i].principal * data[i].rate * data[i].time) / 100;
     console.log(interest);
-    var interestData = [interest, principal, time, rate];
+    var interestData = [{
+        principal
+    }, {
+        time
+    }, {
+        rate
+    }, {
+        interest
+    }];
     console.log(interestData);
 }
 
