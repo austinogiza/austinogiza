@@ -9,7 +9,7 @@ user = []
 first = input("What is your first name?: ")
 last = input("What is your last name?: ")
 email = input("Enter your email: ")
-name = first + last
+
 user.append(name)
 
 
@@ -35,8 +35,15 @@ elif answer == "yes":
 if len(newpass) < 7:
     print('Enter a password more than 7 letters')
     newpass = input("input desired password: ")
+else:
+    print('successful')
 
+name = first + last + password + email
+f = open("user.dat", "wb")
+f.write("First: " + str(first), "Last: " + str(last),
+        "Email: " + str(email), "Password: " + str(password), "Newpass: " + str(newpass))
 
-pickle.dump(user, open("user.dat", "wb"))
+f.close()
+#pickle.dump(user, open("user.dat", "wb"))
 
-user = pickle.load(open("user.dat", "rb"))
+#user = pickle.load(open("user.dat", "rb"))

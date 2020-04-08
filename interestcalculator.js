@@ -16,20 +16,30 @@ const data = [{
     },
 ];
 
-let rate;
 
 function interestCalculator(array) {
-    if (principal >= 2500 && time > 1 && time < 3) {
-        return (rate = 3);
-    } else if (principal >= 2500 && time >= 3) {
-        return (rate = 4);
-    } else if (principal < 2500 && time <= 1) {
-        return (rate = 2);
-    } else {
-        return (rate = 1);
+    var i;
+    for (let i in data) {
+
+        if (data[i].principal >= 2500 && data[i].time > 1 && data[i].time < 3) {
+            return rate = 3;
+        } else if (data[i].principal >= 2500 && data[i].time >= 3) {
+            return rate = 4;
+        } else if (data[i].principal < 2500 && data[i].time <= 1) {
+            return rate = 2;
+        } else {
+            return rate = 1;
+
+        }
+
+
     }
+    var interest = (data[i].principal * data[i].rate * data[i].time) / 100;
+    console.log(interest);
+    var interestData = [interest, principal, time, rate];
+    console.log(interestData);
 }
-const interest = (principal * rate * time) / 100;
-const interestData = [total.Principal, total.rate, total.Time, total.interest];
+
 
 console.log(interestCalculator(data));
+interestCalculator(data);
