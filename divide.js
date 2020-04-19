@@ -25,3 +25,8 @@ function divide(arr) {
 }
 
 console.log(divide(10));
+
+divide(10);
+
+divide(100);
+divide(69);
