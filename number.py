@@ -19,34 +19,35 @@ while True:
             guess = int(input('Guess a number between 1 - 10: '))
             count += 1
             if guess == easyNumber:
-                print("You won")
+                print("You got it right!")
                 break
             elif guess > easyNumber:
                 print("Guess is too high, choose a number between 1-10")
             else:
-                print("You failed")
+                print("That was wrong")
     elif answer == 'medium':
         while count < countMediumLimit:
             guess = int(input('Guess a number between 1 - 20: '))
             count += 1
             if guess == mediumNumber:
-                print("You won")
+                print("You got it right!")
                 break
             elif guess > mediumNumber:
                 print("Guess is too high, choose a number between 1-20")
             else:
-                print("You failed")
+                print("That was wrong")
     elif answer == 'hard':
         while count < countHardLimit:
             guess = int(input('Guess a number between 1 - 100: '))
             count += 1
             if guess == hardNumber:
-                print("You won")
+                print("You got it right!")
                 break
             elif guess > hardNumber:
                 print("Guess is too high, choose a number between 1-100")
+
             else:
-                print("You failed")
+                print("That was wrong")
     elif answer == 'help':
         print("""we have 3 levels, 
             'Easy'
