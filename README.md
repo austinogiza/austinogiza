@@ -1,4 +1,4 @@
-## Hello, I am Augustine Ogiza. A Unicorn 👋🎉!
+## Hello, I am Augustine Ogiza.👋🎉!
 
 I'm a product designer, frontend developer and backend developer in Benin City, Nigeria.
 I am skilled at the following
@@ -8,9 +8,6 @@ I am skilled at the following
 - Nextjs
 - Django and django rest framework
 - React native (Expo/Vanilla)
-- Nodejs/Expressjs
-- HTML, CSS and Vanilla JavaScript
-- Web Animations
 - Figma, User Interface Designs, User Experience Design, Pitch Decks
 
 📫 Get in touch [austinogiza@gmail.com](austinogiza@gmail.com)
